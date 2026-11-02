@@ -4,7 +4,7 @@ Carregador de arquivos **.glb** (modelo 3D + textura embutida) para o [g3d](http
 
 A loader for **.glb** files (mesh + embedded texture) for [g3d](https://github.com/groverburger/g3d).
 
-## Como usar / Usage
+## Como usar
 
 1. Copie [`example/g3d/glb.lua`](example/g3d/glb.lua) para dentro da pasta `g3d/` do seu projeto.
 2. Carregue o modelo:
@@ -23,7 +23,7 @@ end
 
 `glb.load(path, yUp)` retorna `verts, texture`. Por padrão converte do eixo Y-up do glTF para o Z-up do g3d; se o modelo ficar deitado, use `glb.load(path, false)`.
 
-## Exemplo / Example
+## Exemplo
 
 ```
 love example
@@ -31,7 +31,7 @@ love example
 
 (precisa do LÖVE 11.x instalado)
 
-## O que suporta / Supported
+## O que suporta
 
 - Posição, UV, normais e cor de vértice (`COLOR_0`)
 - Textura `baseColor` embutida no .glb (PNG/JPG)
@@ -39,7 +39,7 @@ love example
 - Várias malhas são juntadas em um único modelo
 - Malhas sem UV continuam com a cor de vértice correta
 
-## Limitações / Limitations
+## Limitações
 
 - Sem animações, esqueletos, nem transformações de nós (posição/rotação/escala dos nós são ignoradas)
 - Só a textura de cor base; sem materiais PBR, normal map etc.
