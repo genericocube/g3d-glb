@@ -14,12 +14,12 @@ Feito por **generico_cube**.
 
 ## Instalação
 
-Copie [`example/g3d/glb.lua`](example/g3d/glb.lua) para dentro da pasta `g3d/` do seu projeto.
+Copie a pasta [`example/g3d-cube-tools/`](example/g3d-cube-tools/g3d-glb/init.lua) para o seu projeto, junto da pasta `g3d/`.
 
 ## Modelo animado
 
 ```lua
-local glb = require "g3d.glb"
+local glb = require "g3d-cube-tools.g3d-glb"
 
 local personagem = glb.newModel("modelos/personagem.glb", {0, 0, 0})
 personagem:play("Walk")
@@ -68,7 +68,7 @@ Todos os comandos possuem nomes em inglês e português. Você pode utilizar o i
 
 ```lua
 local g3d = require "g3d"
-local glb = require "g3d.glb"
+local glb = require "g3d-cube-tools.g3d-glb"
 
 local verts, tex = glb.load("modelos/cubo_magico.glb")
 local model = g3d.newModel(verts, tex, {0, 0, 0}, nil, 1)
@@ -135,12 +135,12 @@ Made by **generico_cube**.
 
 ## Installation
 
-Copy [`example/g3d/glb.lua`](example/g3d/glb.lua) into the `g3d/` folder of your project.
+Copy the [`example/g3d-cube-tools/`](example/g3d-cube-tools/g3d-glb/init.lua) folder into your project, next to the `g3d/` folder.
 
 ## Animated model
 
 ```lua
-local glb = require "g3d.glb"
+local glb = require "g3d-cube-tools.g3d-glb"
 
 local character = glb.newModel("models/character.glb", {0, 0, 0})
 character:play("Walk")
@@ -189,7 +189,7 @@ All commands have English and Portuguese names. You can use whichever you prefer
 
 ```lua
 local g3d = require "g3d"
-local glb = require "g3d.glb"
+local glb = require "g3d-cube-tools.g3d-glb"
 
 local verts, tex = glb.load("models/magic_cube.glb")
 local model = g3d.newModel(verts, tex, {0, 0, 0}, nil, 1)
