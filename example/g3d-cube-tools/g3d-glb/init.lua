@@ -3,7 +3,7 @@
 --
 -- ESTÁTICO / STATIC (modelo parado):
 --   local g3d = require "g3d"
---   local glb = require "g3d.glb"
+--   local glb = require "g3d-cube-tools.g3d-glb"
 --   local verts, tex = glb.load("modelo.glb")
 --   local model = g3d.newModel(verts, tex, {0, 0, 0}, nil, 1)
 --
@@ -33,7 +33,6 @@
 -- Limitações / Limitations: uma textura por modelo (baseColor), sem morph targets,
 -- sem mistura (blend) entre animações. A animação é calculada na CPU (ok para low-poly).
 
-local modname = ...
 local glb = {}
 
 ----------------------------------------------------------------------------------------------------
@@ -766,8 +765,7 @@ mt.__index = function(t, k)
 end
 
 local function loadG3d()
-    local parent = modname and modname:match("^(.*)%.[^.]+$")
-    return require(parent or "g3d")
+    return require("g3d")
 end
 
 -- cria um modelo (animado ou não) a partir de um .glb

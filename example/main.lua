@@ -1,5 +1,5 @@
 local g3d = require "g3d"
-local glb = require "g3d.glb"
+local glb = require "g3d-cube-tools.g3d-glb"
 
 -- modelo ANIMADO (as funções em português também funcionam: tocar, pausar, continuar, parar...)
 local cubo = glb.newModel("modelos/cubo_magico.glb", {0, 0, 0})
